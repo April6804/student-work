@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color: white;
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', Helvetica, Arial, san serif;
+}
+nav ul{
+	background-color: rgba(0, 0, 0, 0.4);
+	text-align:center;
+	margin:0;
+	padding:0;
+	width: 100%;
+}
+nav li{
+	list-style-type:none;
+	padding:15px 0;
+	border-top: 1px solid black;
+}
+nav a{
+	color:white;
+	text-decoration:none;
+}
+#hero{
+	background:url(img/surface.jpeg);
+	/* https://www.pexels.com/photo/under-water-photo-735621/ */
+	background-size:cover;
+	background-position:center center;
+	height:570px;
+	margin: 0;
+	padding: 0;
+}
+#about-hero{
+	background:url(img/fish.jpg);
+	/* image sourced from the Will Holmes collection */
+	background-size:cover;
+	background-position:center center;
+	height:570px;
+	margin: 0;
+	padding: 0;
+}
+#contact-hero{
+	background:url(img/coral.jpg);
+	/* Image sourced from https://www.pexels.com/photo/macro-photography-of-white-coral-920163/ */
+	background-size:cover;
+	background-position:center center;
+	height:570px;
+	margin: 0;
+	padding: 0;
+}
+#gallery-hero{
+	background:url(img/gal/wave.jpeg);
+	/* Image sourced from https://www.pexels.com/photo/photography-of-barrel-wave-1298684/ */
+	background-size:cover;
+	background-position:center center;
+	height: 570px;
+	margin: 0;
+	padding: 0;
+}
+#hero-overlay{
+	text-align: right;
+	margin-right: 2%; 
+	position: relative;
+	top: 2%;	
+}
+h1, h2{
+	color: white;
+	font-weight: 100;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+}
+h3{
+	color:0b2bb5;
+	font-weight: 150;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+}
+h1{
+	line-height: 2em;
+	margin-bottom:0px;
+}
+h3{
+	margin-top: 10px;
+}
+section{
+	width: 90%;
+	margin: 20px auto;
+}
+img{
+	width: 100%;
+}
+figure{
+	margin: 0;
+	position: relative;
+}
+figcaption{
+	position: absolute;
+	bottom: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding-top: 5px;
+	width: 100%;
+	height: 35px;
+}
+figcaption span{
+	padding: 5px;
+}
+footer{
+	background-color: rgba(55, 88, 111, 0.7);
+	color: white;
+	margin: 20px auto 0 auto;
+	width: 100%;
+	padding: 20px;
+}
+footer a{
+	color: white;
+	
+}
+/*---- FORM ----*/
+form{
+	width: 60%;
+	margin: 20px auto;
+}
+	form p{
+		margin-top: 5%;
+		
+	}
+label{
+	display: block;
+	padding:  2% 0;
+}
+input{
+	width: 100%;
+	padding: 2%;
+	font-size: 0.9em;
+}
+textarea{
+	min-height: 100px;
+	width: 100%;
+	padding: 2%;
+	font-size: 0.9em;
+	border: 1px solid #ccc;
+}
+input[type=submit]{
+	-webkit-appearance:button;
+	-moz-appearance:button;
+	appearance:button;
+	width: 105%;
+	margin-top: 5%
+}
+@media only screen and (min-width: 600px){
+	
+	nav li{
+		display: inline-block;
+		padding: 15px;
+		border: none;
+	}
+	#hero, #contact-hero, #about-hero{
+		height: 90vh;
+	}
+	#hero-overlay{
+		margin-right: 5%;
+	}
+	article{
+		float: left;
+		width:  25%;
+		padding-right: 4%;
+		padding-left: 4%;
+	}
+	.home-art{
+		float: left;
+		width:  44%;
+		padding-right: 2%;
+		padding-left: 2%;
+	}
+	.about-art{
+		float: left;
+		width:  44%;
+		padding-right: 2%;
+		padding-left: 2%;
+	}
+	.clearfix::after{
+		position: center;
+		content:" ";clear:both;
+		display:table;
+	}
+}
+
+@media only screen and (min-width: 1300px){
+	#hero{
+		height: 1050px;
+	}
+}
