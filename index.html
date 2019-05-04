@@ -55,8 +55,8 @@
         <div class="subheading mb-5">Louisville, KY · <a href="tel:1+502-777-9430">(502) 777-9430</a> ·
           <a class="js-scroll-trigger" href="#contact">aprilfultz@gmail.com</a>
         </div>
-        <p class="lead mb-5">Student's work from Web Design (VCM 220) of the<br>
-          <a href="http://www.jefferson.kctcs.edu/">Jefferson Community &amp; Technical College</a> and the <a href="http://jctcart.com/">Communication Arts Technology Program</a>
+        <p class="lead mb-5">Student's work from Web Design (VCM&nbsp;220) of the<br>
+          <a href="http://www.jefferson.kctcs.edu/">Jefferson Community &amp; Technical&nbsp;College</a> and the <a href="http://jctcart.com/">Communication Arts Technology&nbsp;Program</a>
         </p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/fultz/">
@@ -141,13 +141,19 @@
         <h2 class="mb-5">Contact Me</h2>
 
         <form method="POST" action="https://formspree.io/aprilfultz@gmail.com">
+          <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" name="name" id="name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="email" id="email" required>
+              </div>
+           </div>
             <div class="form-group">
-              <label for="email">Your Email</label>
-              <input type="email" class="form-control" name="email">
-            </div>
-
-            <div class="form-group">
-              <textarea class="form-control" rows="3" name="message" placeholder="Your Message"></textarea>
+              <label for="message">Message:</label>
+              <textarea class="form-control" rows="3" name="message" id="message" required></textarea>
             </div>
 
             <button type="submit" class="btn btn-outline-secondary">Submit</button>
