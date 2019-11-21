@@ -109,18 +109,12 @@
         <!-- <h5>Past semesters:</h5> -->
         <ul class="fa-ul mb-0">
                 <!-- Spring 2019 -->
-                <li>
-                  <a href="student-work/2019/Andy-Boswell/">
-                  Andy</a>
-                </li>
+
                 <li>
                   <a href="student-work/2019/Graham-Fowler/">
                   Graham</a>
                 </li>
-                <li>
-                  <a href="student-work/2019/Janelle/">
-                  Janelle</a>
-                </li>
+                
                 <li>
                   <a href="student-work/2019/jayla-ferrell/">
                   Jayla</a>
@@ -131,23 +125,23 @@
                 </li>
                 <!-- 2015-2018 -->
                 <li>
-                    <a href="past-students/elephants">
+                    <a href="student-work/older/elephants">
                     Stephanie</a>
                 </li>
                 <li>
-                    <a href="past-students/ocean">
+                    <a href="student-work/older/ocean">
                     Will</a>
                 </li>
                 <li>
-                    <a href="past-students/garden">
+                    <a href="student-work/older/garden">
                     Elizabeth</a>
                 </li>
                 <li>
-                    <a href="past-students/pp">
+                    <a href="student-work/older/pp">
                     Kymberly</a>
                 </li>
                 <li>
-                    <a href="past-students/think">
+                    <a href="student-work/older/think">
                     Priddy</a>
                 </li>
         </ul>
@@ -165,7 +159,27 @@
     id="resources">
 
       <div class="w-100">
+
         <h2 class="mb-5">Student Resources</h2>
+
+        <h5>Learn HTML &amp; CSS</h5>
+
+        <ul class="fa-ul mb-0">
+            <li><a href="https://www.w3schools.com/" target="_blank">
+                W3Schools.com
+            </a></li>
+            <li> <a href="https://developer.mozilla.org/en-US/" target="_blank">
+                MDN Web Docs
+            </a></li>
+            <li><a href="https://css-tricks.com/" target="_blank">
+                CSS Tricks
+            </a>
+            <li><a href="https://getbootstrap.com/docs/4.3/components/alerts/" target="_blank">
+                Bootstrap Components
+            </a>
+        </ul>
+
+        <br><br>
 
         <h5>Job Search</h5>
 
@@ -197,13 +211,19 @@
 
         <form method="POST" action="https://formspree.io/aprilfultz@gmail.com">
 
-            <div class="form-group">
-              <label for="email">Your Email</label>
-              <input type="email" class="form-control" name="email">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" name="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Your Email</label>
+                    <input type="email" class="form-control" name="email" required>
+                </div>
             </div>
 
             <div class="form-group">
-              <textarea class="form-control" rows="3" name="message" placeholder="Your Message"></textarea>
+              <textarea class="form-control" rows="3" name="message" placeholder="Your Message" required></textarea>
             </div>
 
             <button type="submit" class="btn btn-light">Submit</button>
