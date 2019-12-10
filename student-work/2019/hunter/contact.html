@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Francois+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+	<img src="bully-img/maxresdefault.jpg" alt= "bully">
+
+  </head>
+
+  <body>
+    <div class="hero contact-hero">
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html" class="active">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+      </nav>
+
+        <!--Header Image:
+		Taken from one of my favorite make up artists youtube page: Em Ford, MyPaleSkin blog-->
+
+    </div><!--hero-->
+
+    <main class="clearfix">
+        <form action="thanks.html">
+            <h3>Contact Us</h3>
+            <p> Please contact us by email using the form below
+			or by phone at 877-N0BULLY (877-602-8559)</p>
+
+            <br>
+            <label>Name *:
+            <input type="text" id="name" name="name" required></label>
+
+
+            <label>Email *:
+            <input type="email" id="email" name="email" required></label>
+
+	<label>Phone *:
+			<input type="phone" id="phone" name="phone" required></label>
+
+            <label>Message *:
+            <textarea id="message" required></textarea></label>
+
+
+
+            <div id="hide">
+              <input id="upfile" type="file" value="upload" onchange="sub(this)"/>
+            </div>
+
+
+            <button type="submit" class="cursor" value="Submit">Submit</button>
+
+        </form>
+
+
+	  </main>
+
+    <footer>
+		<p>&copy; STOMP Out Bullying
+		<br>
+		www.STOMPOutBullying.org</p>
+		<p>877 NOBULLY <a href="tel:1-877-602-8559">877-602-8559</a></p>
+
+	  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>NAACP</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="hero becomeamember-hero">
+	
+		<nav class="topnav" id="myTopnav">
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="becomeamember.html" class="active">Become A Member</a>
+			
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="menu-icon"></i>		
+			</a>
+		</nav>
+	<h1><img src="images/naacp-contact-banner.jpg" class="contact"></h1>
+	</div>
+		
+		<form action="thanks.html">
+            <h1>Become a Member</h1>
+            <p> Take a stand. Answer the call for equality. Answer the call for civil rights. Join the oldest and boldest civil rights organization in the nation. Join the NAACP.<br></p><br>
+
+           
+            <label>Name:
+            <input type="text" id="name" name="name" required></label>
+
+            <label>Email:
+            <input type="email" id="email" name="email" required></label>
+
+            <label>What change do you want to see in the world today?:
+            <textarea id="message" required></textarea></label>
+
+			<!-- We will use this new upload button b/c it looks more modern-->
+            <div id="btn" class="cursor" onclick="getFile()">
+              Click to upload a member ID photo
+            </div>
+
+			<!-- We are going to hide the original upload button with CSS so we can use a more modern looking button(see above) -->
+            <div id="hide">
+              <input id="upfile" type="file" value="upload" onchange="sub(this)"/>
+            </div>
+
+            <button type="submit" class="cursor" value="Submit">Submit</button>
+
+            <br>
+
+            <label>
+              <input type="checkbox" class="cursor" id="news" name="news" checked> Register to Vote!
+            </label>
+
+        </form>
+		
+	
+	<footer>
+		<p>&copy; 2019 NAACP<br>
+		<a href="">4805 Mt Hope Dr, Baltimore, MD 21215</a><br>
+		<a href="tel:1-(410) 580-5777">(410) 580-5777</a><br>
+		<a href="">Contact Us</a></p>
+	</footer>
+
+</body>
+</html>

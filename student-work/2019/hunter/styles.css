@@ -1,0 +1,359 @@
+
+body{
+  background: #fafafa;
+  margin:0;
+  padding:0;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
+.header{
+	background: white;
+	
+}
+h2{
+	text-align: center;
+	font-family: 'Francois One', sans-serif;
+
+}
+.header img{
+		max-width: 720px;
+		margin:auto;
+		display: block;
+	
+}
+.topnav {
+	overflow: hidden;
+	background-color: black;
+	font-family: 'Bebas Neue', sans-serif;
+	
+}
+.topnav a {
+	display: none;
+	color: #f2f2f2;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 27px;
+	
+}
+.topnav a:hover {
+	background-color: #999;
+	color: black;
+	}
+a.active {
+	display: inline-grid;
+	color: white;
+}
+.topnav a.icon {
+	float: right;
+	display: block;
+}
+.topnav.responsive {
+  position: relative;
+  z-index: 1;
+}
+.topnav.responsive .icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.topnav.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+	border-bottom:1px solid #000;
+}
+
+img{
+  width: 100%;
+
+}
+
+
+
+/* ------- Index page main img --------------*/
+.index-hero{
+   
+}
+/* ------- About page main img --------------*/
+.about-hero{
+  
+}
+/* ------- Gallery page main img -------------*/
+.gallery-hero{
+ 
+}
+/* ------- Contact page main img -------------*/
+.contact-hero .topnav{
+ margin-top: -5px;
+}
+
+
+main{
+  margin: 10px auto;
+  width: 90%;
+  max-width:1600px;
+}
+figure{
+  margin: 0;
+  position: relative;
+}
+figcaption{
+  position: absolute;
+  bottom: 5px;
+  height: 35px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-top: 5px;
+}
+figcaption span{
+  padding-left: 10px;
+}
+/* CHANGED COLORS WITH HELP FROM:
+https://coolors.co/589eb7-45a99f-828c51-335145-1e352f */
+footer{
+  background: black;
+  margin: 20px auto 0 auto;
+  padding: 3% 0;
+  width: 100%;
+font-family:'Bebas Neue', sans-serif;
+	
+		
+}
+footer p{
+    text-align:center;
+    margin:auto 1%;
+    color:white;
+    line-height: 1.5em;
+	font-size: 19px;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	padding-left: 8px;
+	
+}
+
+/* ------ About page ------------------*/
+
+h3{
+	font-family: 'Francois One', sans-serif;
+}
+
+.topnav{
+	font-family: 'Bebas Neue', sans-serif;
+	
+}
+
+.event{
+  border-bottom:1px solid #ccc;
+  padding:2.5%;
+  height:100%;
+}
+.event:first-of-type{
+  border-top:1px solid #ccc;
+}
+.date{
+  width:22%;
+  float:left;
+  margin-right:4%;
+  font-weight: bold;
+  font-size:.8em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.description{
+  color:#2191cb;
+  margin-bottom:2.5%;
+}
+.description span{
+  color:#000;
+  font-size: .8em;
+  cursor: pointer;
+}
+/* ------- Gallery page --------------*/
+/* Flex Box styles for photos */
+.flexbox{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  width:95%;
+  margin: 2% auto 0;
+}
+.flexbox div{
+  margin:2%;
+  width:350px;
+  flex-grow:1;
+}
+.flexbox img{
+  width: 100%;
+  height:auto;
+}
+
+/* ------- Contact form ---------------*/
+form{
+  margin: 20px auto;
+font-family: 'Francois One', sans-serif;
+	font-size: 1.5em;
+}
+form p{
+  margin-bottom:5px;
+}
+label{
+    display:inline;
+}
+input{
+  width:100%;
+  padding:1.7%;
+  margin:1.5% 0;
+  font-size: 1em;
+  border-radius: 4px;
+  border:1px solid #ccc;
+  box-sizing: border-box;
+	
+}
+textarea{
+  min-height:100px;
+  width: 100%;
+  padding: 2%;
+  margin: 1.5% 0;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+	font-family: 'Bebas Neue', sans-serif;
+}
+input[type=file]{
+  padding-left: 0px;
+}
+
+#hide{
+  height:0;
+  width: 0;
+  overflow: hidden;
+}
+/* Photo upload Button */
+#btn{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  max-width: 98%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 6px 15px;
+  overflow-wrap: break-word;
+	
+}
+
+input[type=checkbox]{
+  width: auto;
+  cursor: pointer;
+  margin: auto;
+}
+
+/* Submit Button */
+button{
+    border: 1px solid #270C6D;
+    border-radius: 4px;
+    /* CHANGED COLORS WITH HELP FROM:
+    https://coolors.co/589eb7-45a99f-828c51-335145-1e352f */
+    background: #270C6D;
+    color:white;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding:2%;
+    width:100%;
+    font-size: 2.5em;
+    display: inline;
+	font-family: "Bebas Neue", sans-serif;
+}
+
+/* _:-moz-tree-row(hover), #btn{
+  width:102%;
+} */
+
+
+
+/* ------- Submit page ---------------*/
+#thanks{
+    text-align: center;
+    height:76vh;
+  }
+
+
+@media only screen and (min-width: 700px) {
+	.header img{
+		width: 720px;
+		margin: auto;
+		
+	}
+    .topnav{
+        text-align: center;
+    }
+    .topnav a {
+    	display: inline-grid;
+        grid-auto-flow: column;
+    }
+    .topnav a.icon {
+    	display: none;
+    }
+  
+   
+    section{
+        float: left;
+        width: 48%;
+        padding-left: 4%;
+    }
+    section:first-of-type{
+        padding-left: 0;
+    }
+    #no-top-margin{
+        margin-top:0;
+    }
+    .clearfix::after{
+        content:" ";
+        clear: both;
+        display: table;
+    }
+    footer{
+        padding:2% 0;
+        font-size: 0.9em;
+    }
+    /* ------- About page --------------*/
+    .date{
+        margin-right:1%;
+    }
+    /* ------- Gallery page --------------*/
+    .flexbox div{
+        margin:1%;
+    }
+    /* ------- Contact page --------------*/
+    form{
+        width:70%;
+        margin: 10px auto;
+    }
+    button{
+        min-width: 200px;
+        padding:1.7%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    form{
+        width:60%;
+        margin: 10px auto;
+    }
+    button{
+        width: 20%;
+        padding: 1%;
+
+    }
+
+}

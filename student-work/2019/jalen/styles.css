@@ -1,0 +1,349 @@
+@charset "UTF=8";
+/* css document*/
+
+/*
+ main, .column{
+	border: 1px red solid;
+} 
+*/
+
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', helvetica, arial, sans-serif;
+
+}
+/*------- Makes ALL images responsive ------*/
+img{
+	max-width: 100%;
+}
+
+.flex-container{
+	display: flex;
+	flex-wrap:wrap;
+}
+.flex-items{
+	flex-basis: 300px;
+	flex-grow:1;
+	margin:1%;
+}
+.flex-items img{
+	width:100%;
+}
+/*------- Main top images for home page ------*/
+.index-hero{
+	height:60vh;
+	background: url(images/HomepageNAACP.png) no-repeat;
+	background-position: center 80%;
+	background-size: cover;
+}
+
+.about-hero{
+	height:60vh;
+	background: url(images/state-fair-picketing-gallery-1.jpg) no-repeat;
+	background-position: center 80%;
+	background-size: cover;
+}
+
+.contact-hero{
+	height:40vh;
+	background-position: center 80%;
+	background-size: cover;
+}
+
+.contact{
+	background-position: center 80%;
+}
+
+.becomeamember-hero{
+	
+}
+/*------  NAV ------*/
+
+.topnav {
+  overflow: hidden;
+  background-color:rgba(45,45,45,.8);
+}
+.topnav a {
+  float: left;
+  display: none;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  display: block;
+  background-color: #333;
+  color: white;
+}
+.topnav a.icon {
+	float: right;
+	display: block;
+}
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+}
+
+/*CREATED NEW STYLES TO MAKE SURE THE DROP DOWN MENU IS LAYERED ON TOP OF THE H1*/
+.topnav.responsive{
+	position: relative;
+/*	Z-INDEX CHANGES WHAT IS LAYERED BEHIND OR ON TOP OF OTHER ELEMENTS*/
+	z-index: 1;
+}
+.topnav.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+}
+
+.menu-icon{
+    background: url("menu.png") no-repeat;
+    background-size: contain;
+/*	     WE CHANGED THE HEIGHT OF OUR HAMBURGER MENU ICON    */
+    height:15px;
+    width:23px;
+    display: inline-block;
+}
+
+/*ADDED CLASS CALLED "HERO" SO THESE STYLES ARE NOT APPLIED TO OTHER H1 WE MIGHT HAVE IN THE FUTURE ON OUR WEBSITES */
+.hero h1{
+	text-align: right;
+	margin-right:5%;
+	
+	font-weight:300;
+	font-size:3em;
+	line-height: 1.1em;
+	
+
+}
+/* STYLES FOR OUR FIGURE*/
+figure{
+	margin: 0;
+	position: relative;
+}
+figcaption{
+	background: rgba(0,0,0,0.5);
+	height:35px;
+	color:white;
+	width:100%;
+
+	/*	POSITIONING SO WE CAN MOVE OUR FIGURE CAPTION UP ON TOP OF OUR FIGUE IMAGE*/
+	position: absolute;
+	bottom:5px;
+}
+figcaption span{
+	padding-left: 10px;
+	}
+/*STYLES FOR MAIN*/
+main{
+	width:90%;
+	margin:auto;
+}
+.column{
+	float:none;
+}
+footer{
+	background: rgb(78, 115, 140);
+	margin:20px auto 0 auto;
+	padding:3% 0;
+	width:100%;
+}
+footer p{
+	margin: auto 1%;
+}
+footer a{
+	color:white;
+}
+
+/*----- About Page -----------------*/
+.event{
+	border-bottom:1px solid #ccc;
+	padding:2.5%;
+	height:100%;
+	}
+
+.event:first-of-type{
+	border-top:1px solid #ccc;
+}
+
+.date{
+	width:22%;
+	float:left;
+	margin-right:4%;
+	font-weight: bold;
+	font-size:.8em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.description{
+	color:#2191cb;
+	margin-bottom:2.5%;
+}
+
+.description span{
+	color:#000;
+	font-size: .8em;
+	cursor: pointer;
+}
+
+/*--Contact form--*/
+	form{
+		margin:20px auto;
+	}
+
+	form p{
+	margin-bottom:5px;
+	}
+
+	label{
+		display:inline;
+	}
+
+	input{
+	  width:100%;
+	  padding:1.7%;
+	  margin:1.5% 0;
+	  font-size: 1em;
+	  border-radius: 4px;
+	  border:1px solid #ccc;
+	  box-sizing: border-box;
+	}
+
+	textarea{
+	  min-height:100px;
+	  width: 100%;
+	  padding: 2%;
+	  margin: 1.5% 0;
+	  font-size: 1em;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	}
+
+	input[type=file]{
+		padding-left:0px;
+	}
+
+	/* Hide original ugly input file button */
+	#hide{
+	  height:0;
+	  width: 0;
+	  overflow: hidden;
+	}
+	/* Photo upload Button */
+	#btn{
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  background: #fff;
+	  cursor: pointer;
+	  max-width: 98%;
+	  display: inline-block;
+	  text-align: center;
+	  margin-top: 10px;
+	  padding: 6px 15px;
+	  overflow-wrap: break-word;
+	}
+
+	input[type=checkbox]{
+	  width: auto;
+	  cursor: pointer;
+	  margin: auto;
+	}
+	/* Submit Button */
+	button{
+	    border: 1px solid #45A99F;
+	    border-radius: 4px;
+	    /* CHANGED COLORS WITH HELP FROM:
+	    https://coolors.co/589eb7-45a99f-828c51-335145-1e352f */
+	    background: #45A99F;
+	    color:white;
+	    cursor: pointer;
+	    margin-top: 3%;
+	    margin-bottom: 3%;
+	    padding:2%;
+	    width:100%;
+	    font-size: 1em;
+	    display: inline;
+	}
+
+@media screen and (min-width: 600px) {
+
+	.topnav a {
+	  display: block;
+	}
+	.topnav a.icon {
+	  display: none;
+	}
+
+	.index-hero{
+		height:70vh;
+	}
+
+	.about-hero{
+		height:70vh;
+	}
+
+	.column{
+		float:left;
+		width:47%;
+		margin-left: 30px;
+	}
+	.column:first-of-type{
+		margin:0;
+	}
+	.clearfix::after{
+		clear:both;
+		content:"";
+		display: table;
+	}
+	/* ------- Contact page --------------*/
+    form{
+        width:70%;
+        margin: 10px auto;
+    }
+    button{
+        min-width: 200px;
+        padding:1.7%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+	
+	.map{
+		width:65%;
+	}
+	
+	.logo{
+		width:10%;
+		margin-left: 30px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.column{
+		float:left;
+		width:48%;
+		margin-left: 30px;
+	}
+
+	/* ------- Contact page --------------*/
+    form{
+        width:60%;
+        margin: 10px auto;
+    }
+    button{
+        width: 20%;
+        padding: 1%;
+
+    }
+
+}

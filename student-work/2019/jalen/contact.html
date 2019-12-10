@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<!-- WE ADDED THE CLASS CALLED HERO FOR SHARED STYLES THAT EVERY PAGE WILL NEED. -->
+	<div class="hero contact-hero">
+
+		<nav class="topnav" id="myTopnav">
+		  	<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="contact.html" class="active">Contact Us</a>
+			<a href="becomeamember.html">Become A Member</a>
+			
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="menu-icon"></i>
+			</a>
+		</nav>
+		<h1><img src="images/naacp-contact-banner.jpg" class="contact"></h1>
+	
+	</div>
+
+	<main class="clearfix">
+        <form action="thanks.html">
+            <h3>Contact Us</h3>
+            <p> We appreciate your feedback. Contact us at one of the phone numbers below and we will respond as soon as possible. <br></p><br>
+
+           
+            <label>Name:
+            <input type="text" id="name" name="name" required></label>
+
+            <label>Email:
+            <input type="email" id="email" name="email" required></label>
+
+            <label>Message:
+            <textarea id="message" required></textarea></label>
+
+			<!-- We will use this new upload button b/c it looks more modern-->
+            <div id="btn" class="cursor" onclick="getFile()">
+              Click to upload a photo
+            </div>
+
+			<!-- We are going to hide the original upload button with CSS so we can use a more modern looking button(see above) -->
+            <div id="hide">
+              <input id="upfile" type="file" value="upload" onchange="sub(this)"/>
+            </div>
+
+            <button type="submit" class="cursor" value="Submit">Submit</button>
+
+            <br>
+
+            <label>
+              <input type="checkbox" class="cursor" id="news" name="news" checked> Receive our newsletters
+            </label>
+
+        </form>
+		
+		<main class="clearfix">
+			<div class="column">
+					<h2>Contact Info</h2>
+				
+				<div>National Headquarters</div>
+					<div class="description">
+						4805 Mt. Hope Drive<br>
+						Baltimore MD 21215<br>
+						Local: (410) 580-5777<br>
+						Toll Free: (877) NAACP-98<br>
+				</div><br>
+				
+				<div>Membership Phone:</div>				
+				<div class="description">(866) 636-2227</div>
+			<br>
+			
+			<br><br>
+			<div>
+				<div>Fundraising</div>
+				<div class="description">Phone: (410)580-5615<br>
+					Fax: (410) 602-9310
+				</div>
+			</div><!--event--><br>
+			
+			<div>
+				<div>ACT-SO</div>
+				<div class="description">Phone: (410)580-5650<br>
+					Email: actso@naacpnet.org
+				</div>
+			</div><br>
+		
+			<div>
+				<div>Education &amp; Scholarships</div>
+				<div class="description">Phone: (410) 580-5770<br>
+				</div>
+			</div><br>
+			</div>
+			</main>
+		
+		<main class="clearfix">
+		<div class="column">
+			<div>
+					<div>Youth &amp; College</div>
+					<div class="description">Phone: (410) 580-5656<br> Fax: (410) 358-9786
+					</div>
+			</div><br>
+		
+			<div>
+					<div>NAACP Events</div>
+					<div class="description">Phone: (410) 580-5780 <br>
+						or (410) 580-5782</div>
+			</div><br>
+		
+			<div>
+					<div>Webmaster</div>
+					<div class="description"><span>For Technical Inquiries<br></span>webmaster@naacpnet.org
+					</div>
+			</div><br>
+		
+		<div>
+					<div>Hollywood Bureau</div>
+					<div class="description"><span>Los Angeles, CA</span><br>
+					Phone: (323) 938-5268<br>
+					Fax: (323) 938-8153<br>
+					www.naacpimageawards.net<br>
+					hollywoodbureau@naacpnet.org
+					</div>
+			</div><br>
+		
+		<div>
+					<div>Washington Bureau</div>
+					<div class="description">
+						1156 15th Street, NW Suite 915<br>
+						Washington, DC 20005<br>
+						Phone: (202) 463-2940<br>
+						Fax: (202) 463-2953<br>
+						washingtonbureau@naacpnet.org<br>
+					</div>
+			</div><br>
+		
+		</div>
+		</main>
+	
+	
+		
+		<main class="map"> 
+			<br><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3085.5294884871414!2d-76.71153098463633!3d39.34424447950427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a4a1f3d37db%3A0x4c92f8b3579d9568!2sNAACP!5e0!3m2!1sen!2sus!4v1575587464728!5m2!1sen!2sus" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		</main>
+		
+    </main>
+
+	<footer>
+		<p>&copy; 2019 NAACP<br>
+		<a href="">4805 Mt Hope Dr, Baltimore, MD 21215</a><br>
+		<a href="tel:1-(410) 580-5777">(410) 580-5777</a><br>
+		<a href="">Contact Us</a></p>
+	</footer>
+
+
+
+	<script type="text/javascript" src="app.js"></script>
+
+
+</body>
+</html>

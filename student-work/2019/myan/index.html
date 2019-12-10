@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Fidelity Financial</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+	
+	<!-- My New Style Sheet -->
+	
+	<link href="newstyles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+	  <!-- New Div for Search and Login -->
+    <div class="container">
+      <a class="navbar-brand logo" href="index.html"><img src="fidelityimages/fidelitylogogreentext.png" alt="Fidelity Financial Advisors" class="logo">
+		<!--  <img src="logo.png" alt="fidelityfinancial">
+
+		-->
+		</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ourmission.html">Our Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="py-5 homepage-img text-white mb-5">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+			<div class="test">
+         		<h1 class="aligntext-left">Making <br>Financial<br> Planning<br> Easy</h1>
+          		<p class="lead mb-5"></p>
+	  		</div>	
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 mb-5">
+        <h2>What We Do</h2>
+        <hr>
+		<br>
+        <p>Our financial planning process is designed to help you make the most of your money, no matter how much you have, so you can balance the life you want now and later.
+
+<br><br>We'll help you answer big questions like:<br>Can I afford to travel and still pay down my credit card debt? 
+<br>Can I save for my kids' college while paying off my student loans?<br> Once I retire, how do I make sure I have 
+enough income? <br><br>At Fidelity Financial Advisors, we work with you to understand your most 
+important goals and make a personalized plan to help take you there.</p><br>
+        <a class="btn btn-primary btn-lg" href="ourmission.html">Learn More &raquo;</a>
+      </div>
+      <div class="col-md-4 mb-5">
+        <h2>Contact Us</h2>
+        <hr>
+        <address>
+          <strong>Fidelity Financial Advisors</strong>
+          <br>1234 Address Way
+          <br>Louisville, KY 40555
+          <br>
+        </address>
+        <address>
+          <abbr title="Phone">P:</abbr>
+          1(800) 555-5555
+          <br>
+          <abbr title="Email">E:</abbr>
+          <a href="mailto:#">Advisors@FidelityFinancial.com</a>
+        </address>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-90">
+			<h4 class="card-img-top">ONLINE ACCESS</h4>
+		<form>
+          <div class="card-body">
+            <p class="card-text">Enter your username and password to access your online profile.</p><br>
+			  
+		<label>Username:<br> 
+			<input type="text" name="username" required>
+			 
+			  </label>
+			  
+		<label>Password:<br>
+			<input type="password" name="password" required>
+			  </label>
+			  <br>
+					
+			  
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">LOGIN &raquo;</a>
+          </div>
+			</form>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-90">
+          <h4 class="card-img-top">SAVINGS CALCULATOR</h4>
+		
+          <div class="card-body">
+            
+            <p class="card-text">Do you know how much your money could be worth when you need it? Realize the power of long-term saving with our calculator. 
+				
+				<br><br>Enter the amount, a hypothetical rate of return and the number of years you plan to save.</p>
+			  
+			  <form id="calculator">
+				  
+				
+				<div class="calcnumber"> 
+					<div>Amount</div> 
+					<div class="right">$<span id="amountValue">0</span></div>
+				</div>
+				 
+			  	<input type="range" class="custom-range" min="0" max="1000000" value="0" id="amountRange">
+				  
+				  
+				<div class="calcnumber"> 
+					<div>Rate of Return</div> 
+					<div class="right"><span id="returnValue">0</span>%</div>
+				</div>
+				  
+			  	<input type="range" class="custom-range" min="0.0" max="12.0" step="0.001" value="0" id="returnRange">
+				  
+				  
+					
+				<div class="calcnumber"> 
+					<div>Number of Years</div> 
+					<div class="right"><span id="yearValue">0</span></div>
+				</div>
+				 
+			  	<input type="range" class="custom-range" min="0" max="100" value="0" id="yearRange">
+				  
+			  </form>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">CALCULATE &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-90">
+		  <h4 class="card-img-top">SERVICES</h4>
+   
+          <div class="card-body">
+			<br><p class="card-text">From wealth management to retirement and college planning, Fidelity has your back on nearly every financial service you could need. <br><br>Click the link below to view a full list of services.</p><br>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">SERVICES &raquo;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-footer">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Fidelity Financial 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Please forgive me -->
+	<script>
+		var slider1 = document.getElementById("amountRange");
+		var output1 = document.getElementById("amountValue");
+		output1.innerHTML = slider1.value;
+
+		slider1.oninput = function() {
+  		output1.innerHTML = this.value;
+		}
+		
+		
+		var slider2 = document.getElementById("returnRange");
+		var output2 = document.getElementById("returnValue");
+		output2.innerHTML = slider2.value;
+
+		slider2.oninput = function() {
+  		output2.innerHTML = this.value;
+		}
+		
+		
+		var slider3 = document.getElementById("yearRange");
+		var output3 = document.getElementById("yearValue");
+		output3.innerHTML = slider3.value;
+
+		slider3.oninput = function() {
+  		output3.innerHTML = this.value;
+		}
+	</script>
+	
+</body>
+
+</html>

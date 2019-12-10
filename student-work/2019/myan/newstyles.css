@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/* CSS Document */
+.logo{
+width: 250px;
+}
+
+.homepage-img{
+	background:url(fidelityimages/carousel.jpg);
+/*	http://induced.info/?s=Children+young+people+and+families++Gloucestershire*/
+	background-size:cover;
+	height: 60vh;
+	
+}
+
+.services-img{
+	background:url(fidelityimages/services.png);
+	background-size:cover;
+	height: 25vh;
+}
+
+
+.card-title{
+	font-family: Arial Black, Arial Bold, Arial;
+	color: white;
+}
+
+.card-body{
+	background-color:#E2E8E6;
+	
+}
+.card-footer{
+	background-color:#C3D8D2;
+
+}
+
+.card-img-top{
+	color:white;
+	font-family: Arial Black, Sans-serif;
+	font-size: 1.2em;
+	border-bottom: 4px solid white;
+	background-color:#4A605A;
+	padding: 5.5%;
+    margin-bottom: 0;
+}
+
+.card{
+	border:0;
+	display:inline;
+}
+
+.imagestyles{
+	flex-basis: auto;
+}
+
+h1{
+	font-family: Arial Black, Arial Bold, Arial, Sans-Serif;
+	font-size:4em!important;
+	
+	
+}
+
+h2{
+	font-family: Arial Black, Arial Bold, Arial, Sans-Serif;
+	font-size:2em!important;
+	color:#4A605A;
+}
+
+.small-font{
+	font-size:1.1em!important;
+}
+
+.medium-font{
+	font-size:1.4em!important;
+}
+	
+h3{
+	text-align: center;
+	font-family:Arial Narrow, Arial, Sans-Serif;
+	color:#4A605A;
+	font-size: 2em;
+	
+}
+
+.paragraph-styles{
+	font-size:1.5em;
+	font-family: Arial;
+	color: #5A5A5A;
+}
+
+.center-box{
+	justify-content:center!important; 
+	
+}
+
+.aligntext-center{
+	text-align: center;
+}
+
+.aligntext-left{
+	text-align: left;
+}
+
+.btn-primary{
+	background-color: orangered;
+	border:none;
+}
+
+.btn{
+	display: block;
+	width:200px;
+	margin: auto;
+}
+
+.contact-btn{
+	display:inline;
+}
+
+
+footer{
+	background-color: #4A605A!important;
+}
+
+.bg-footer{
+ background-color: #4A605A!important;	
+}
+
+.h-90{
+ 	height:90%;
+	
+}
+
+.flex-container{
+	
+	display:flex;
+	align-content: center;
+}
+
+
+.contact-form{
+	width:80%;
+	margin:auto;
+}
+#calculator div{
+	display: inline;
+	
+}
+#calculator .right{
+	float: right;
+	
+}
+
+input[type=range]::-webkit-slider-thumb {
+background-color:#053300;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+	background-color:#C3D8D2!important;
+	
+}
+
+textarea{
+width:300px;
+height:100px
+}
+
+
+
+.missionheader-size{
+		font-size: 2.5em!important;
+		
+	}
+
+.mission-background{
+	background-color:#C3D8D2;
+}
+
+.test {
+    margin-top: 25px;
+    
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+	
+
+	

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Donate</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="hero donate-hero">
+		<nav class="topnav" id="myTopnav"><a href="index.html">About Us</a> 
+			<a href="donate.html" class="active">Donate</a> 
+			<a href="find_support.html">Find Support</a>
+			<a href="take_action.html">Take Action</a> 
+			<a href="javascript:void(0);" class="icon" onClick="myFunction()"> 
+			<em class="menu-icon"></em>
+			</a></nav>
+		<h1>AFSP Donate</h1>
+	</div>
+	
+	
+	
+	
+	
+	
+	<main class="clearfix"> <!-- Container holding floating elements -->
+		
+		
+		<form action="thanks.html">
+			<h2>Monetary Donations</h2>
+			<p>A gift to the American Foundation for Suicide Prevention helps fund our mission to save lives and give hope to those affected by suicide. All donations to AFSP are tax deductible. If you have questions about your gift or about how to give, please contact our development office at development@afsp.org or by calling toll free, 1-888-333-AFSP. Thank you for your support. Click here for information about state nonprofit disclosures.</p> <!---text from afsp.org -->
+			<br>
+			
+		<label>Name:
+			<input type="text" id="name" name="name" required></label>
+			
+			
+		<label>Email:
+			<input type="email" id="email" name="email" required></label>
+
+			
+		<label>Message:
+			<textarea id="message" required></textarea>
+			</label>
+			
+			<label> Donation:
+			<input type="number" id="amount" name="amount" required>
+			</label>
+			
+		
+			
+			<div id="hide">	
+		<input id="upfile" type="file" value="upload" onchange="sub(this)"/>
+			</div>
+			
+			<button type="submit" class="cursor" value="Submit">Submit</button>
+			
+			<br>
+			
+			<label>
+				<input type="checkbox" class="cursor" id="news" name="news" checked> Receive Our newsletters
+			</label>
+		
+		</form>
+		
+	</main>
+	
+	<footer>
+		<p>&copy; 2019 American Foundation for Suicide Prevention<br>
+		<a href="tel:1-800-273-8255">(1-800)273-8255 </a><br>
+		<a href="">National Suicide Prevention Lifeline</a></p>
+	
+	</footer>
+	
+	
+	<script type="text/javascript" src="app.js"></script>
+	
+</body>
+</html>

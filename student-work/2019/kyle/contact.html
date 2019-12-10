@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet"> 
+
+	<meta charset="UTF-8">
+	<title>Bluegrass Campervans</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+	<div class="hero contact-hero">
+	
+		<nav class="topnav" id="myTopnav">
+		  <a href="index.html" class="active">Home</a>
+		  <a href="about.html">About</a>
+		  <a href="contact.html">Contact</a>
+			<a href="gallery.html">Gallery</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="menu-icon"></i>		
+			</a>
+		</nav>
+		<h1>ROME</h1>
+	</div>
+	
+	<main class="clearfix">
+		<form action="thanks.html">
+			<center><h2>Contact Us!</h2>
+			<p><b>Got questions? We got the awnsers. We try to provide you with as much information as possible on the website, but if we missed anything youre more than welcome to let us know! We hope to see you soon.</p></b></center>
+		<center><h1>call us</h1><h2>502-649-9938</h2></center>
+			
+			<br>
+			<center><label>Name:
+				<input type="text" id="name" required></label></center>
+			
+			<center><label>Email: 
+				<input type="email" id="email" required></label></center>
+			
+			<label><br>Message us:
+				<textarea id="message" required></textarea></label>
+		
+			
+			
+				
+			<center><div id="btn" class="cursor" onclick="getFile()">
+				Upload  your personal photos
+				</div>
+			
+				<div id="btn" class="cursor" onclick="getFile()">
+				leave a review
+				</div></center>
+		
+			<div id="hide">
+				<input id="upfile" type="file" value="upload" onchange="sub(this)"/>
+			</div>
+		
+		  <center><button type="submit" class="cursor" value="Submit">Submit</button></center>
+		
+			<br>
+	<center><label>
+		<h2>Would you like to sign up for our weekly updates?</h2><center><input type="checkbox" class="cursor" id="news" name="news" checked></center>
+			</label>
+</form>
+			</main>
+		
+	<footer>
+		<center><p>&copy; 2020 Rome <br>
+		<a href="tel:1-502-555-1234">(502) 649-9938</a><br>
+		</p></center>
+			</footer>
+			
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+ 
+</body>
+</html>
+
+
+
+
