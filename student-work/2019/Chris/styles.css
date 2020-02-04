@@ -44,37 +44,37 @@ img{
 
 .contact-hero {
 	height:60vh;
-	background: url(Img/suma.jpg) no-repeat;
-	background-position: center 80%;
+	background: url(img/suma.jpg) no-repeat;
+	background-position: center;
 	background-size: cover;
-		
+
 }
 
 .gallery-hero {
 	height:60vh;
 	background: url(img/black-rhino-namibia-adobe-stock.jpeg) no-repeat;
-	background-position: center 80%;
+	background-position: center;
 	background-size: cover;
-	
+
 }
 
 .donate-hero {
 	height:60vh;
-	background: url(Img/Nohorn.jpg) no-repeat;
-	background-position: center 80%;
+	background: url(img/Nohorn.jpg) no-repeat;
+	background-position: center;
 	background-size: cover;
-	
+
 }
 .about-hero {
 	height:60vh;
-	background: url(Img/Black.jpg) no-repeat;
-	background-position: center 80%;
+	background: url(img/Black.jpg) no-repeat;
+	background-position: center;
 	background-size: cover;
 }
 .thanks-hero {
 	height:60vh;
-	background: url(Img/OneHorn.jpg) no-repeat;
-	background-position: center 80%;
+	background: url(img/OneHorn.jpg) no-repeat;
+	background-position: center;
 	background-size: cover;
 }
 /*--- Nav ---*/
@@ -141,8 +141,8 @@ img{
 	position: absolute;
 	right:0;
 	top:9%;
-	
-	
+
+
 }
 
 figure{
@@ -167,7 +167,7 @@ main{
 	margin:auto auto 40px auto;
 }
 
-/*vvv-----------About Page-----------vvv*/ 
+/*vvv-----------About Page-----------vvv*/
 .description{
 	color:#2191cb;
 	margin-bottom:2.5%;
@@ -178,7 +178,7 @@ main{
 	cursor: pointer;
 }
 
-/*^^^-----------About Page-----------^^^*/ 
+/*^^^-----------About Page-----------^^^*/
 
 /*vvv-----------Contact Page---------vvv*/
 
@@ -254,6 +254,7 @@ button{
 button a{
 	text-decoration:none;
 	color:white;
+	display: block;
 }
 input[type=submit]{
 	background: #FFF;
@@ -310,7 +311,7 @@ footer a{
  box-sizing:border-box
 
 
- /*Slideshow container*/ 
+ /*Slideshow container*/
 .slideshow-container {
   max-width: 700px;
   position: relative;
@@ -322,7 +323,7 @@ footer a{
   display: none;
 }
 
- 
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -349,7 +350,7 @@ footer a{
   background-color: rgba(0,0,0,0.8);
 }
 
- 
+
 .text {
   color: #f2f2f2;
   font-size: 40px;
@@ -386,7 +387,7 @@ footer a{
   background-color: #717171;
 }
 
- 
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -414,7 +415,7 @@ footer a{
 	  display: none;
 	}
 	.index-hero{
-		height:70vh; 
+		height:70vh;
 	}
 	.column{
 	float:left;
@@ -432,14 +433,14 @@ footer a{
 }
 
 @media screen and (min-width: 1000px) {
-	
+
 	.column{
 	float:left;
 	width:48%;
 	margin-left:30px;
 	}
-	
+
 }
-/* 
+/*
 
 */
