@@ -6,11 +6,11 @@ main, .column, p, h2{
 body {
 	margin:0;
 	padding:0;
-	font-family: 'Open Sans',helvetica, arial, sans-serif; 
+	font-family: 'Open Sans',helvetica, arial, sans-serif;
 }
 
 img{
-	max-width: 100%;	
+	max-width: 100%;
 }
 
 .flex-container{
@@ -26,22 +26,22 @@ img{
 
 .flex-items img{
 	width:100%;
-	
+
 }
 
 .home-hero{
 	height:100vh;
 	background:url(Images/HomeCover.jpg);
-	background-position: center 60px; 
-	background-size: cover;	
+	background-position: center 60px;
+	background-size: cover;
 	/**Image Found at: https://roadsandkingdoms.com/2017/the-female-free-divers-of-jeju/**/
-	
+
 }
 
 .history-hero{
 	height:50vh;
 	background:url("Images/HistoryCover.png");
-	background-position: center 165px; 
+	background-position: center 165px;
 	background-size: cover;
 	/**Image Found: https://www.lisasee.com/islandofseawomen/haenyeo/**/
 }
@@ -49,14 +49,14 @@ img{
 .gallery-hero{
 	height:50vh;
 	background:url("Images/GalleryCover.jpg");
-	background-position: center -90px; 
+	background-position: center -90px;
 	background-size: cover;
 	/** Image Found: https://www.koreatimes.co.kr/www/news/dr/653_219401.html**/
 }
 .contact-hero{
 	height:50vh;
 	background:url("Images/ContactCover.jpg");
-	background-position: center 75px; 
+	background-position: center 75px;
 	background-size: cover;
 	/**https://www.journeywonders.com/things-to-do-and-see-in-jeju-island/**/
 }
@@ -65,7 +65,7 @@ img{
   background-color:	#4CACA4;
 }
 .topnav a {
-  
+
   display: none;
   color: #f2f2f2;
   padding: 14px 16px;
@@ -112,7 +112,7 @@ a.active {
 }
 
 .hero h1{
-	font-family:'Tangerine'; 
+	font-family:'Tangerine';
 	text-align: center;
 	color:white;
 	font-weight:700;
@@ -131,13 +131,13 @@ h4{
 }
 
 figure{
-	margin:0; 
+	margin:0;
 	position: relative;
-	
+
 }
-figcaption{ 
+figcaption{
 	background: rgba(0,0,0,0.5);
-	position: absolute; 
+	position: absolute;
 	width:100%;
 	height:26px;
 	bottom:5px;
@@ -145,21 +145,21 @@ figcaption{
 }
 figcaption span{
 	padding-left:5px;
-	
+
 
 }
 
-main{	
+main{
 	margin-bottom:40px;
 	width:90%;
 	margin:auto;
 
-	
+
 }
 
 .column{
 	float:none;
-	
+
 }
 
 
@@ -227,7 +227,15 @@ user agent stylesheet
 label {
     cursor: default;
 }
-
+textarea{
+	width: 100%;
+	padding: 1.7%;
+	margin: 1.5% 0;
+	font-size: 1em;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
 footer{
 	padding-top: 45px;
     padding-bottom: 60px;
@@ -238,7 +246,7 @@ footer{
     letter-spacing: .5px;
     background: #1d1d1d;
 	color: #c0c0c0;
-	
+
 }
 
 
@@ -253,10 +261,10 @@ footer a{
 @media screen and (min-width: 300px){
 	.gallery-hero{
 		background-position: center 40px;
-		
+
 	}
 
-	
+
 }
 @media screen and (min-width: 700px) {
 	.topnav{
@@ -273,33 +281,33 @@ footer a{
 	.index-hero{
 		height:70vh;
 	}
-	
+
 	.column{
 		float:left;
 		width:48%;
 		margin-left:30px
-	
+
 }
 	.column:first-of-type{
 		margin:0;
 	}
-	
+
 	.clearfix:after{
 		clear: both;
 		content:"";
 		display:table;
-		
-	} 
-	
+
+	}
+
 	.hero h1{
 		margin-top: 5%;
-		
+
 	}
-	
+
 	.gallery-hero{
 		background-position: center 80px;
 	}
-	
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -307,54 +315,52 @@ footer a{
 		float:left;
 		width:48%;
 		margin-left:30px
-	}	
+	}
 	.hero h1{
 		margin-top: 2%;
 		margin-bottom: 1%;
 	}
-	
+
 	iframe{
 		width: 500px;
-		
+
 	}
-	
+
 	form{
 		width: 55%;
-		
+		margin:auto;
 	}
 }
 
 
 @media screen and (min-width: 1200px){
-	
+
 	.hero h1{
 		margin-top: 2%;
 		margin-bottom: 1%;
 	}
-	
+
 	.history-hero{
 		 background-position: center 73px;
-		
+
 	}
-	
+
 	.gallery-hero{
 		background-position: center -22px;
 	}
-}	
-	
+}
+
 
 @media screen and (min-width: 1400px){
 	.gallery-hero{
-		background-position: center -60px; 
+		background-position: center -60px;
 		}
 	}
 
 
 @media screen and (min-width: 2000px){
 	.gallery-hero{
-		background-position: center -80px; 
+		background-position: center -80px;
 		}
 	/**Will not show up? Image goes too far down when in full screen...**/
 	}
-	
-
