@@ -33,10 +33,20 @@ img{
 .hero{
 	min-height:500px;
 }
+.hero h1{
+	font-family:'Tangerine';
+	text-align: center;
+	color:white;
+	font-weight:700;
+	margin:3%;
+	font-size:4em;
+	line-height: 1.1em;
+	text-shadow: 1px 1px 10px rgba(0,0,0,.9);
+}
 .home-hero{
-	height:100vh;
+	height:80vh;
 	background:url(Images/HomeCover.jpg);
-	background-position: center 60px;
+	background-position: center top;
 	background-size: cover;
 	/**Image Found at: https://roadsandkingdoms.com/2017/the-female-free-divers-of-jeju/**/
 }
@@ -111,16 +121,7 @@ a.active {
     display: inline-block;
 }
 
-.hero h1{
-	font-family:'Tangerine';
-	text-align: center;
-	color:white;
-	font-weight:700;
-	margin:3%;
-	font-size:4em;
-	line-height: 1.1em;
-	text-shadow: 1px 1px 10px rgba(0,0,0,.9);
-}
+
 
 figure{
 	margin:0;
@@ -224,7 +225,12 @@ button{
 	border: 1px solid #ccc;
 	box-sizing: border-box;
 }
-/* End contact styles */
+/*------------ Thanks Page --------------*/
+
+.thanks-hero{
+	height:80vh !important;
+}
+/* --------------- --------------*/
 
 
 
