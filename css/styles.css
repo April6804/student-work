@@ -93,6 +93,11 @@ a:hover, a:focus, a:active {
 .dev-icons .list-inline-item i:hover {
   color: #17a2b8;
 }
+.navbar-brand{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(255,255,255,.5)!important;
+}
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
