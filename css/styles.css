@@ -190,3 +190,7 @@ section.resume-section .resume-item .resume-date {
     padding-bottom: 3rem !important;
   }
 }
+
+.row img{
+    height:100%;
+}
