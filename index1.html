@@ -114,9 +114,9 @@
         <div class="fa-ul mb-0">
             <a href="https://amadeaschenk.github.io/hotdog-style-guide/" target="_blank">Amadea</a>
             <br>
-            <a href="https://rachelofryer.github.io/Jacobis-Riverside-Deli/" target="_blank">Rachel</a>
+            <a href="https://hgrether.github.io/SunshineCafe/" target="_blank">Haley</a>
             <br>
-            <a href="https://cschepers0002.github.io/Silver_Seniors/" target="_blank">Charlotte</a>
+            <a href="https://cschepers0002.github.io/silverseniors/" target="_blank">Charlotte</a>
             <br>
             <a href="student-work/2019/myan/index.html" target="_blank">Myan</a>
             <br>
@@ -145,13 +145,13 @@
 
         <ul class="fa-ul mb-0">
             <li>
-                <a href="http://www.htmlandcssbook.com/" target="_blank"> HTML &amp; CSS Book
+                <a href="http://www.htmlandcssbook.com/" target="_blank"> HTML&amp;CSS Book
                 </a>
             </li>
-            <!-- <li>
+            <li>
                 <a href="https://learnlayout.com/" target="_blank"> Learn CSS Layout
                 </a>
-            </li> -->
+            </li>
             <li>
                 <a href="https://www.youtube.com/LayoutLand" target="_blank">
                     Layout Land Videos
@@ -229,7 +229,7 @@
       <div class="w-100">
         <h2 class="mb-5">Contact Me</h2>
 
-        <form class="kwes-form" action="https://kwes.io/api/foreign/forms/mJXrNX7fCZtslkQukqyy">
+        <form method="POST" name="contactform" action="contact-form-handler.php">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="name">Your Name</label>
@@ -257,7 +257,14 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/app.min.js"></script>
-  <script src="https://kwes.io/v2/kwes-script.js" defer></script>
+  <!-- <script src="https://kwes.io/v2/kwes-script.js" defer></script> -->
+  <script language="JavaScript">
+    // Code for validating the form
+    var frmvalidator  = new Validator("contactform");
+    frmvalidator.addValidation("name","req","Please provide your name");
+    frmvalidator.addValidation("email","req","Please provide your email");
+    frmvalidator.addValidation("email","email","Please enter a valid email address");
+  </script>
 </body>
 
 </html>
