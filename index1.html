@@ -234,15 +234,23 @@
                 <div class="form-group col-md-6">
                     <label for="name">Your Name</label>
                     <input type="text" class="form-control" name="name" required>
+                    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
-                <div class="form-group col-md-6">
+                <!-- tooltip -->
+                <div class="validate">
+                        <label for="Tooltips" class="error"></label>
+                        <input type="text" id="email" placeholder="Email" class="form-control" required>
+                </div>
+                <!-- <div class="form-group col-md-6">
                     <label for="email">Your Email</label>
                     <input type="email" class="form-control" name="email" required>
-                </div>
+                </div> -->
             </div>
             <div class="form-group">
               <textarea class="form-control" rows="3" name="message" placeholder="Your Message" required></textarea>
             </div>
+
             <button type="submit" class="btn btn-outline-secondary">Submit</button>
         </form>
 
@@ -257,14 +265,20 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/app.min.js"></script>
+
+
+  <!-- tooltip -->
+  <!-- <script src="main.js"></script> -->
   <!-- <script src="https://kwes.io/v2/kwes-script.js" defer></script> -->
-  <script language="JavaScript">
+  <!-- <script language="JavaScript">
     // Code for validating the form
+    // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+    // for details
     var frmvalidator  = new Validator("contactform");
     frmvalidator.addValidation("name","req","Please provide your name");
     frmvalidator.addValidation("email","req","Please provide your email");
     frmvalidator.addValidation("email","email","Please enter a valid email address");
-  </script>
+  </script> -->
 </body>
 
 </html>
