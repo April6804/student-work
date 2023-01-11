@@ -151,7 +151,7 @@ section.resume-section .resume-item .resume-date {
   section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
-  .made-this{
+  /* .made-this{
       position: relative;
 
   }
@@ -159,13 +159,13 @@ section.resume-section .resume-item .resume-date {
       position: absolute;
       bottom: 10px;
       width: 200px;
-  }
+  } */
 }
 
 
 
 @media (min-width: 992px) {
-    .made-this{
+    /* .made-this{
         position: relative;
         height:180px;
     }
@@ -173,7 +173,7 @@ section.resume-section .resume-item .resume-date {
         position: absolute;
         bottom: 25px;
         width: 200px;
-    }
+    } */
   #sideNav {
     text-align: center;
     position: fixed;
