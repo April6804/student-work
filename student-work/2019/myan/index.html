@@ -2,7 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BT4VD2CX51"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'G-BT4VD2CX51');
+    </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -15,9 +23,9 @@
 
   <!-- Custom styles for this template -->
   <link href="css/business-frontpage.css" rel="stylesheet">
-	
+
 	<!-- My New Style Sheet -->
-	
+
 	<link href="newstyles.css" rel="stylesheet">
 
 </head>
@@ -65,7 +73,7 @@
 			<div class="test">
          		<h1 class="aligntext-left">Making <br>Financial<br> Planning<br> Easy</h1>
           		<p class="lead mb-5"></p>
-	  		</div>	
+	  		</div>
         </div>
       </div>
     </div>
@@ -81,9 +89,9 @@
 		<br>
         <p>Our financial planning process is designed to help you make the most of your money, no matter how much you have, so you can balance the life you want now and later.
 
-<br><br>We'll help you answer big questions like:<br>Can I afford to travel and still pay down my credit card debt? 
-<br>Can I save for my kids' college while paying off my student loans?<br> Once I retire, how do I make sure I have 
-enough income? <br><br>At Fidelity Financial Advisors, we work with you to understand your most 
+<br><br>We'll help you answer big questions like:<br>Can I afford to travel and still pay down my credit card debt?
+<br>Can I save for my kids' college while paying off my student loans?<br> Once I retire, how do I make sure I have
+enough income? <br><br>At Fidelity Financial Advisors, we work with you to understand your most
 important goals and make a personalized plan to help take you there.</p><br>
         <a class="btn btn-primary btn-lg" href="ourmission.html">Learn More &raquo;</a>
       </div>
@@ -114,18 +122,18 @@ important goals and make a personalized plan to help take you there.</p><br>
 		<form>
           <div class="card-body">
             <p class="card-text">Enter your username and password to access your online profile.</p><br>
-			  
-		<label>Username:<br> 
+
+		<label>Username:<br>
 			<input type="text" name="username" required>
-			 
+
 			  </label>
-			  
+
 		<label>Password:<br>
 			<input type="password" name="password" required>
 			  </label>
 			  <br>
-					
-			  
+
+
           </div>
           <div class="card-footer">
             <a href="#" class="btn btn-primary">LOGIN &raquo;</a>
@@ -136,40 +144,40 @@ important goals and make a personalized plan to help take you there.</p><br>
       <div class="col-md-4 mb-5">
         <div class="card h-90">
           <h4 class="card-img-top">SAVINGS CALCULATOR</h4>
-		
+
           <div class="card-body">
-            
-            <p class="card-text">Do you know how much your money could be worth when you need it? Realize the power of long-term saving with our calculator. 
-				
+
+            <p class="card-text">Do you know how much your money could be worth when you need it? Realize the power of long-term saving with our calculator.
+
 				<br><br>Enter the amount, a hypothetical rate of return and the number of years you plan to save.</p>
-			  
+
 			  <form id="calculator">
-				  
-				
-				<div class="calcnumber"> 
-					<div>Amount</div> 
+
+
+				<div class="calcnumber">
+					<div>Amount</div>
 					<div class="right">$<span id="amountValue">0</span></div>
 				</div>
-				 
+
 			  	<input type="range" class="custom-range" min="0" max="1000000" value="0" id="amountRange">
-				  
-				  
-				<div class="calcnumber"> 
-					<div>Rate of Return</div> 
+
+
+				<div class="calcnumber">
+					<div>Rate of Return</div>
 					<div class="right"><span id="returnValue">0</span>%</div>
 				</div>
-				  
+
 			  	<input type="range" class="custom-range" min="0.0" max="12.0" step="0.001" value="0" id="returnRange">
-				  
-				  
-					
-				<div class="calcnumber"> 
-					<div>Number of Years</div> 
+
+
+
+				<div class="calcnumber">
+					<div>Number of Years</div>
 					<div class="right"><span id="yearValue">0</span></div>
 				</div>
-				 
+
 			  	<input type="range" class="custom-range" min="0" max="100" value="0" id="yearRange">
-				  
+
 			  </form>
           </div>
           <div class="card-footer">
@@ -180,7 +188,7 @@ important goals and make a personalized plan to help take you there.</p><br>
       <div class="col-md-4 mb-5">
         <div class="card h-90">
 		  <h4 class="card-img-top">SERVICES</h4>
-   
+
           <div class="card-body">
 			<br><p class="card-text">From wealth management to retirement and college planning, Fidelity has your back on nearly every financial service you could need. <br><br>Click the link below to view a full list of services.</p><br>
           </div>
@@ -215,8 +223,8 @@ important goals and make a personalized plan to help take you there.</p><br>
 		slider1.oninput = function() {
   		output1.innerHTML = this.value;
 		}
-		
-		
+
+
 		var slider2 = document.getElementById("returnRange");
 		var output2 = document.getElementById("returnValue");
 		output2.innerHTML = slider2.value;
@@ -224,8 +232,8 @@ important goals and make a personalized plan to help take you there.</p><br>
 		slider2.oninput = function() {
   		output2.innerHTML = this.value;
 		}
-		
-		
+
+
 		var slider3 = document.getElementById("yearRange");
 		var output3 = document.getElementById("yearValue");
 		output3.innerHTML = slider3.value;
@@ -234,7 +242,7 @@ important goals and make a personalized plan to help take you there.</p><br>
   		output3.innerHTML = this.value;
 		}
 	</script>
-	
+
 </body>
 
 </html>
